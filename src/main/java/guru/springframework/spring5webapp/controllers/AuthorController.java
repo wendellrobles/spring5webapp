@@ -5,23 +5,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * Created by jt on 5/18/17.
- */
 @Controller
 public class AuthorController {
 
-    private AuthorRepository authorRepository;
+  private final AuthorRepository authorRepository;
 
-    public AuthorController(AuthorRepository authorRepository) {
-        this.authorRepository = authorRepository;
-    }
+  public AuthorController(AuthorRepository authorRepository) {
+    this.authorRepository = authorRepository;
+  }
 
-    @RequestMapping("/authors")
-    public String getAuthors(Model model){
+  @RequestMapping("/authors")
+  public String getAuthors(Model model) {
 
-        model.addAttribute("authors", authorRepository.findAll());
+    model.addAttribute("authors", authorRepository.findAll());
 
-        return "authors";
-    }
+    return "authors";
+  }
 }
