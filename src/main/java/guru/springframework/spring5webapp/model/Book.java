@@ -10,9 +10,6 @@ import javax.persistence.ManyToMany;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jt on 5/16/17.
- */
 @Entity
 public class Book {
 
@@ -86,8 +83,7 @@ public class Book {
     this.authors = authors;
   }
 
-  @Override
-  public boolean equals(Object o) {
+  @Override public boolean equals(Object o) {
 
     if (this == o) {
       return true;
@@ -99,7 +95,7 @@ public class Book {
 
     Book book = (Book) o;
 
-    return id != null ? id.equals(book.id) : book.id == null;
+    return id.equals(book.id);
   }
 
   @Override

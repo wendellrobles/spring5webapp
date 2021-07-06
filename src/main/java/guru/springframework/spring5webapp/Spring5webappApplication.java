@@ -3,6 +3,9 @@ package guru.springframework.spring5webapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * This example shows how to define equality in JPA/Hibernate entities.
+ */
 @SpringBootApplication
 public class Spring5webappApplication {
 
