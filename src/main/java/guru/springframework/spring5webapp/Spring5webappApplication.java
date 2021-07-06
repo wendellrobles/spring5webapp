@@ -3,6 +3,9 @@ package guru.springframework.spring5webapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * This shows an example of Thymeleaf templating.
+ */
 @SpringBootApplication
 public class Spring5webappApplication {
 
