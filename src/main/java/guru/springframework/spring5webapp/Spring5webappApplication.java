@@ -3,6 +3,9 @@ package guru.springframework.spring5webapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * This is a simple example of Spring JPA entities.
+ */
 @SpringBootApplication
 public class Spring5webappApplication {
 
